@@ -4,14 +4,14 @@
 class Movie{
    public $title;
    public $description;
-   public $type;
+   public $genre;
    public $year;
 
    // construct
-   public function __construct(string $_title, string $_description, string $_type, int $_year){
+   public function __construct(string $_title, string $_description, string $_genre, int $_year){
       $this->title = $_title;
       $this->description = $_description;
-      $this->type = $_type;
+      $this->genre = $_genre;
       $this->year = $_year;
    }
 
@@ -22,7 +22,6 @@ class Movie{
 
 
 }
-
 
 
 ?>

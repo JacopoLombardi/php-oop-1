@@ -24,12 +24,12 @@ var_dump($movie1)
 </head>
 <body>
    
-   <div class="container  border  text-center  mt-5  pt-4">
+   <div class="container  text-center  mt-5  pt-4">
       <h1>Film</h1>
 
-      <div class="d-flex">
+      <div class="d-flex  flex-wrap  justify-content-center  mt-4">
 
-         <div class="col-4  border">
+         <div class="col-4  border  p-4">
             <h3> <?php echo $movie1 -> getMovieInfo() ?> </h3>
 
             <?php foreach($movie1 as $movie): ?>
@@ -37,16 +37,16 @@ var_dump($movie1)
             <?php endforeach ?>
          </div>
 
+         
 
-
-         <div class="col-4  border">
+         <div class="col-4  border  p-4">
             <h3> <?php echo $movie2 -> getMovieInfo() ?> </h3>
 
             <?php foreach($movie2 as $movie): ?>
                <p> <?php echo $movie ?> </p>
             <?php endforeach ?>
          </div>
-         
+
       </div>
 
    </div>
