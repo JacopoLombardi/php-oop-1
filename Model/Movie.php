@@ -15,9 +15,14 @@ class Movie{
       $this->year = $_year;
    }
 
+   // metodo
+   public function getMovieInfo(){
+      return "$this->title - $this->year";
+   }
 
 
 }
+
 
 
 ?>
